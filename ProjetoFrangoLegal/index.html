@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frango Legal - The best</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Frango Legal</h1>
+    </header>
+
+    <img src="img/LogoMarca.png" height="300" width="300">
+
+    <main>
+        <div class="title">
+            <h2>CONTROLE DE VENDAS</h2>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Cliente</label>
+                <input type="text" id="cliente" placeholder="Nome do cliente">
+            </div>
+
+            <div class="lineInput">
+                <label>Produto</label>
+                <select id="produto">
+                    <option value="" disabled selected>Selecione um produto</option>
+                    <option>Frango assado</option>
+                    <option>Vatapá raiz</option>
+                    <option>Baião de dois</option>
+                    <option>Farofa sucelso</option>
+                    <option>Sorvete beradeiro</option>
+                </select>
+            </div>
+
+            <div class="lineInput">
+                <label>Preço</label>
+                <input type="number" id="preco" placeholder="Preço do produto">
+            </div>
+
+            <button onclick="venda.salvar()" id="btn1">Salvar</button>
+            <button onclick="venda.cancelar()">Cancelar</button>
+        </div>
+        
+    </main>
+
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">ID</th>
+                <th>Cliente</th>
+                <th>Produto</th>
+                <th class="center">Preço</th>
+                <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+   
+    
+</body>
+</html>
